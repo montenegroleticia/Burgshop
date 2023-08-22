@@ -1,12 +1,32 @@
 <template>
-    <div>aa</div>
-  </template>
+  <footer>
+    <p>burgshop &copy; 2023</p>
+  </footer>
+</template>
   
-  <script>
-  export default {
-    name: "Footer"
-  }
-  </script>
+<script>
+export default {
+  name: "Footer"
+}
+</script>
   
-  <style  scoped></style>
-  
+<style  scoped>
+footer {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 0;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #EFA335;
+}
+</style>
