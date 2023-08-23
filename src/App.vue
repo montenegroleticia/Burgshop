@@ -37,6 +37,6 @@ h1 {
 
 .main-container {
   margin: 40px;
-  min-height: calc(100vh - 300px);
+  min-height: 250px;
 }
 </style>
