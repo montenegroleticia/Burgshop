@@ -26,6 +26,12 @@ export default {
 </script>
 
 <style>
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 h1 {
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -33,10 +39,11 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 40px;
 }
 
 .main-container {
-  margin: 40px;
-  min-height: 250px;
+  padding-top: 100px;
+  padding-bottom: 120px;
 }
 </style>
