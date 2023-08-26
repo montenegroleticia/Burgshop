@@ -61,8 +61,9 @@ export default {
             this.carnes = data.carnes
             this.opcionaisdata = data.opcionais
         },
-        async createBurg(e) {
-            e.preventDefalt()
+        async createBurger(e) {
+
+            e.preventDefault()
 
             const data = {
                 nome: this.nome,
@@ -78,12 +79,11 @@ export default {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: dataJson
-            })
-            const res = await req.json();
+            });
+            const res = await req.json()
             this.msg = "Pedido realizado com sucesso!"
 
             setTimeout(() => this.msg = "", 3000)
-
             this.nome = ""
             this.carne = ""
             this.pao = ""
